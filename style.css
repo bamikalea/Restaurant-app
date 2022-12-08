@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Smythe', serif;
+}
+
+
+body{
+    padding-top: 2em;
+    background-color: #F5F5F5;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.container{
+    width: 70%;
+    max-width: 600px;
+    background-color: #fff;
+    position: relative;
+}
+
+header{
+    background-image: url(/images/header.png);
+    background-color: #5c5c5c;
+    background-repeat: no-repeat;
+    padding: 2em 2em 4em;
+    background-size: cover;
+    color: #fff;
+}
+
+header .text{
+    padding: 4em  2em;
+}
+
+h1{
+    font-size: 2.5rem ;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.5rem ;
+    margin-top: .2em;
+    font-weight: 300;
+}
+
+main{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D1D5DB;
+    padding: 0em 0em 2em 0;
+    margin-bottom: 1em;
+    color: #1F2937;
+}
+
+/* .list-item:last-child {
+    border-bottom: none;
+} */
+
+.item-details{
+    width: 70%;
+    padding: 0 1em;
+}
+.menu-item p{
+    color: #6B7280;
+    margin: .5em 0;
+}
+
+.menu-item .add-btn{
+    cursor: pointer;
+    max-width: 40px;
+}
+
+
+/* =========  YOUR ORDER =========== */
+
+.your-order h2{
+    text-align: center;
+}
+
+.order{
+    display: block;
+    margin:  0 0;
+}
+
+.order-item {
+   padding: 1em 0 ;
+}
+
+.order-item, .total-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.order-item span{
+    font-family: 'montserrat', sans-serif;
+    font-size: .8rem;
+    color: #AEAEAE;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.order-list{
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.btn{
+    font-family: 'montserrat', sans-serif;
+    margin-top: 2em;
+    background-color: #16DB99;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0ec387;
+    transition: .5s;
+}
+
+/* =========  PAYMENT MODAL =========== */
+
+.modal{
+    z-index: 3333;
+    position: absolute;
+    background-color: #7a7a7a8b;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: #fff;
+    max-width: 525px;
+    padding: 0 1em 1.5em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+form .close-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    max-width: 25px;
+    transform: rotate(45deg);
+}
+
+.hide{
+    display: none;
+}
+
+form h2{
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.5em 0 1em;
+}
+
+form input{
+    width: 475px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400px;
+    padding: 1em 1em;
+    margin: 0 0 .8em;
+    border-radius: .2rem;
+    border: 1px solid #b9b9b9;
+}
+
+input::placeholder{
+    color: #757575;
+
+}
+
+/* =========  SUCCESS MESSAGE =========== */
+.success-message h2{
+    background-color: #ECFDF5;
+    padding: 1em 3em;
+    color: #065F46;
+    text-align: center;
+}
