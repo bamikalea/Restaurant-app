@@ -120,5 +120,3 @@ function successMessage(){
         <h2>Thanks, James! Your order is on its way!</h2>
     </div>`
 }
-
-
