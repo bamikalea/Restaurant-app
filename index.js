@@ -56,7 +56,6 @@ document.addEventListener("click", function(e){
         document.getElementById("modal").style.display="none"
         document.getElementById("order").innerHTML = successMessage()
         orderList = [] 
-        console.log(document.getElementById("modal"))
     } 
     else if(e.target.dataset.completeOrder){
         document.getElementById("container").innerHTML += paymentModal()
